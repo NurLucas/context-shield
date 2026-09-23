@@ -8,6 +8,11 @@
   "bin": {
     "context-shield": "dist/cli.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "build:exe": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe /target:exe /out:ContextShield.exe /optimize+ /nologo launcher.cs",
