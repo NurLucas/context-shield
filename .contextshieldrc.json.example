@@ -1,0 +1,17 @@
+{
+  "port": 8080,
+  "host": "127.0.0.1",
+  "upstreamUrl": "https://api.openai.com",
+  "redactionMode": "redact",
+  "enableL1Cache": true,
+  "l1MaxEntries": 1000,
+  "l1TtlMs": 86400000,
+  "enableL2Cache": true,
+  "rateLimitPerMinute": 120,
+  "sessionTokenBudget": 0,
+  "dailyTokenBudget": 0,
+  "costPer1kPromptTokens": 0.005,
+  "costPer1kCompletionTokens": 0.015,
+  "logLevel": "info",
+  "auditLog": true
+}

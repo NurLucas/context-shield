@@ -1,0 +1,57 @@
+{
+  "name": "context-shield",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "High-performance reverse proxy, secret redaction firewall, and semantic caching engine for AI coding agents and LLMs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "context-shield": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:exe": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe /target:exe /out:ContextShield.exe /optimize+ /nologo launcher.cs",
+    "watch": "tsc --watch",
+    "start": "node dist/cli.js start",
+    "demo": "node dist/cli.js demo",
+    "menu": "node dist/cli.js menu",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\""
+  },
+  "keywords": [
+    "llm",
+    "proxy",
+    "reverse-proxy",
+    "caching",
+    "semantic-cache",
+    "ai-agent",
+    "security",
+    "secret-scanner",
+    "rate-limiting",
+    "token-optimizer",
+    "openai",
+    "anthropic"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NurLucas/context-shield.git"
+  },
+  "author": "NurLucas",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
