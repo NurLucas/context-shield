@@ -42,7 +42,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/NurLucas/context-shield.git"
+    "url": "git+https://github.com/NurLucas/context-shield.git"
   },
   "author": "NurLucas",
   "license": "MIT",
